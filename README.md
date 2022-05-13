@@ -1,6 +1,16 @@
 # M3_Wiper_Control_System
 
+##  FOLDER STRUCTURE
 
+| FOLDER | CONTENTS |
+| ------ | -------- |
+| 0_Abstract | README.md |
+| 1_Requirements | README.md |
+| 2_Design | README.MD |
+| 3_Implementation | inc (Header files), src (C Files) ) |
+| 4_TestCases | README.md |
+| 5_Report | README.md |
+| 6_Output | README.md |
 
 
 ##  Actions
