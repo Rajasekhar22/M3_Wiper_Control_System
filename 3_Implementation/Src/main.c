@@ -27,7 +27,7 @@ void off();
 
 int main(void)
 {
-	uint16_t count = 1,press = 0;
+	uint16_t count = 1;
 	/*Setting GREEN LED PIN*/
 	GPIO_Handle_t INP,LED;
 	LED.pGPIOx = GPIOD;
