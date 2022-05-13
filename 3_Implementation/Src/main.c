@@ -73,14 +73,17 @@ int main(void)
 		if(GPIO_ReadFromInputPin(GPIOA, GPIO_PIN_NO_0) == ENABLE){//checking for input as HIGH
 
 			if(count == 1){
-
-				GPIO_ToggleOutputPin(GPIOD, GPIO_PIN_NO_14);//RED led
+				if(GPIO_ReadFromInputPin(GPIOA, GPIO_PIN_NO_0) == ENABLE){
+					if(GPIO_ReadFromInputPin(GPIOA, GPIO_PIN_NO_0) == ENABLE){
+						GPIO_ToggleOutputPin(GPIOD, GPIO_PIN_NO_14);//RED led
+					}
+				}
 				count++;
 
 			}
 
 
-			else if(count == 2){
+			if(count == 2){
 
 				while(count ==2){
 					if(slow() == 1){
@@ -196,12 +199,12 @@ int fast(){
 void off(){
 
 	GPIO_ToggleOutputPin(GPIOD, GPIO_PIN_NO_13);
-	delay(10000000);
+	delay(25000000);
 	GPIO_WriteToOutputPin(GPIOD, GPIO_PIN_NO_13, DISABLE);
 	GPIO_ToggleOutputPin(GPIOD, GPIO_PIN_NO_12);
-	delay(10000000);
+	delay(25000000);
 	GPIO_WriteToOutputPin(GPIOD, GPIO_PIN_NO_12, DISABLE);GPIO_ToggleOutputPin(GPIOD, GPIO_PIN_NO_15);
-	delay(10000000);
+	delay(25000000);
 	GPIO_WriteToOutputPin(GPIOD, GPIO_PIN_NO_15, DISABLE);
 
 
