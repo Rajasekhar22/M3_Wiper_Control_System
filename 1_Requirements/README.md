@@ -53,6 +53,5 @@
 |  ID   | Description | Status (Implemented/ In Future) |
 | ----- | ----------- | ------------------------------- |
 | LLR 1 |  Delay based LED glow  |  Implemented  |
-| LLR 2 |   
-| LLR 3 |  
+| LLR 2 |  SENSOR   |   IN FUTURE   |
 
