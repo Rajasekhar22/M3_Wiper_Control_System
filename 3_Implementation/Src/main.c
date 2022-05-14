@@ -26,6 +26,7 @@ int medium();
 void setOutput(void);
 void delay(int par);
 void off();
+int veh_Off();
 
 
 int main(void)
@@ -84,8 +85,6 @@ int main(void)
 				count++;
 
 			}
-
-
 			else if(count == 2){
 				if(GPIO_ReadFromInputPin(GPIOA, GPIO_PIN_NO_0) == ENABLE)
 				while(count ==2){
@@ -117,7 +116,11 @@ int main(void)
 				count++;
 			}
 			else if(count ==6){
-				GPIO_WriteToOutputPin(GPIOD, GPIO_PIN_NO_14, DISABLE);
+
+				if(veh_Off() == 1){
+					delay(HZ_4);
+					count =1;
+				}
 
 			}
 		}
@@ -202,13 +205,20 @@ int fast(){
 void off(){
 
 	GPIO_ToggleOutputPin(GPIOD, GPIO_PIN_NO_13);
-	delay(25000000);
+	delay(250000000);
 	GPIO_WriteToOutputPin(GPIOD, GPIO_PIN_NO_13, DISABLE);
 	GPIO_ToggleOutputPin(GPIOD, GPIO_PIN_NO_12);
-	delay(25000000);
+	delay(250000000);
 	GPIO_WriteToOutputPin(GPIOD, GPIO_PIN_NO_12, DISABLE);GPIO_ToggleOutputPin(GPIOD, GPIO_PIN_NO_15);
-	delay(25000000);
+	delay(250000000);
 	GPIO_WriteToOutputPin(GPIOD, GPIO_PIN_NO_15, DISABLE);
 
-
+}
+int veh_Off(){
+	GPIO_WriteToOutputPin(GPIOD, GPIO_PIN_NO_14, DISABLE);
+	if(GPIO_ReadFromInputPin(GPIOA, GPIO_PIN_NO_0)){
+			return  1;
+		}
+		else
+			return 0;
 }
