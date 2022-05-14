@@ -10,12 +10,15 @@
   press."
 ```
 
+##  INTRODUCTION
+
+
 ##  INSTRUMENTS REQUIRED
 
 | S.NO | APPARATUS | QUANTITY/TOOLS |
 | ---- | --------- | -------- |
 | 01 | STM32F407 DISCOVERY BOARD | 1 |
-| 02 | STM32CUBEIDE | 1 |
+| 02 | STM32CUBEIDE | Latest version |
 | 03 | XPACK TOOLS | BUILD, QEMU, OPENOCD |
 | 04 | COMMAND PROMPT | CYGWIN |
 
@@ -33,7 +36,7 @@
 ```
 
 ```bash
-  "As there is unavailability of WIPER to interface in the software, LED's inbuilt in the DISCOVERY KIT are used to determine the 
+  "As there is unavailability of WIPER to interface in the software, LED is inbuilt in the DISCOVERY KIT are used to determine the 
   movement of wiper."
 ```
 ##  PROCEDURE
