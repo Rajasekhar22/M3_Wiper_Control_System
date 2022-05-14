@@ -9,6 +9,11 @@
     * Referred many research papers on wiper control.
     * Referred many e-sources for coding part.
     * Surfed internet(youtube, google scholar).
+
+*   [Wiper](https://sci-hub.se/10.1109/sice.2006.314662)
+*   []()
+*   []()
+*   []()
        
 ##  Key feautures
     * Controlling speeds of wiper subsequent key presses.
