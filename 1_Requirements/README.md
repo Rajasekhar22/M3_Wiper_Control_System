@@ -10,11 +10,11 @@
     * Referred many e-sources for coding part.
     * Surfed internet(youtube, google scholar).
 
-*   [Wiper](https://sci-hub.se/10.1109/sice.2006.314662)
-*   []()
-*   []()
-*   []()
-       
+*   [Wiper System for Automated vehicle](https://sci-hub.se/10.1109/sice.2006.314662)
+*   [Rain sensor for automatic Vehicle](https://ieeexplore.ieee.org/abstract/document/6727613/)
+*   [Implementation of Vehicle Wiper Control System Using Image Sensor](https://www.koreascience.or.kr/article/JAKO201423366169200.page)
+
+
 ##  Key feautures
     * Controlling speeds of wiper subsequent key presses.
 
