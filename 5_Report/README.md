@@ -59,6 +59,16 @@ As you can see in the following schematic diagram, the onboard user push button 
 ###  STM32F407VGTx - Discovery board
 <img width="526" alt="2022-05-14-10-07-03" src="https://user-images.githubusercontent.com/101009958/168410851-b96cb765-2a08-42c7-942b-aa01e757b7b0.png">
 
+##  Introduction
+  The STM32F4DISCOVERY Discovery kit allows users to easily develop applications with
+the STM32F407VG high-performance microcontroller with the Arm® Cortex®-M4 32-bit
+core. It includes everything required either for beginners or experienced users to get started
+quickly.
+  Based on STM32F407VG, it includes an ST-LINK/V2-A embedded debug tool, one STMEMS digital accelerometer, one digital microphone, one audio 
+DAC with integrated class D speaker driver, LEDs, push-buttons and a USB OTG Micro-AB connector. Specialized addon boards can be connected 
+by means of the extension header connectors. The STM32F4DISCOVERY Discovery kit comes with the STM32 comprehensive free software libraries
+and examples available with the STM32CubeF4 MCU Package.
+
 ##  SOFTWARE 
 
 ```bash
