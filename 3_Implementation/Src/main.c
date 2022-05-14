@@ -71,20 +71,20 @@ int main(void)
 	{
 		//GPIO_WriteToOutputPin(GPIOA, GPIO_PIN_NO_0, DISABLE);//setting PAO '0' initially
 		if(GPIO_ReadFromInputPin(GPIOA, GPIO_PIN_NO_0) == ENABLE){//checking for input as HIGH
-
+			//delay(10000000);
 			if(count == 1){
-				if(GPIO_ReadFromInputPin(GPIOA, GPIO_PIN_NO_0) == ENABLE){
-					if(GPIO_ReadFromInputPin(GPIOA, GPIO_PIN_NO_0) == ENABLE){
-						GPIO_ToggleOutputPin(GPIOD, GPIO_PIN_NO_14);//RED led
-					}
-				}
+				delay(20000000);
+				delay(20000000);
+				delay(20000000);
+				delay(20000000);
+				GPIO_ToggleOutputPin(GPIOD, GPIO_PIN_NO_14);//RED led
 				count++;
 
 			}
 
 
-			if(count == 2){
-
+			else if(count == 2){
+				if(GPIO_ReadFromInputPin(GPIOA, GPIO_PIN_NO_0) == ENABLE)
 				while(count ==2){
 					if(slow() == 1){
 						count++;
@@ -130,16 +130,16 @@ void delay(int par)
 int slow()
 {
 	GPIO_ToggleOutputPin(GPIOD, GPIO_PIN_NO_15);
-	delay(250000000);
+	delay(80000000);
 	GPIO_WriteToOutputPin(GPIOD, GPIO_PIN_NO_15, DISABLE);
 	GPIO_ToggleOutputPin(GPIOD, GPIO_PIN_NO_12);
-	delay(250000000);
+	delay(80000000);
 	GPIO_WriteToOutputPin(GPIOD, GPIO_PIN_NO_12, DISABLE);
 	GPIO_ToggleOutputPin(GPIOD, GPIO_PIN_NO_13);
-	delay(250000000);
+	delay(80000000);
 	GPIO_WriteToOutputPin(GPIOD, GPIO_PIN_NO_13, DISABLE);
 	GPIO_ToggleOutputPin(GPIOD, GPIO_PIN_NO_12);
-	delay(250000000);
+	delay(80000000);
 	GPIO_WriteToOutputPin(GPIOD, GPIO_PIN_NO_12, DISABLE);
 	/*GPIO_ToggleOutputPin(GPIOD, GPIO_PIN_NO_15);
 	delay(50000000);
@@ -152,16 +152,16 @@ int slow()
 }
 int medium(){
 	GPIO_ToggleOutputPin(GPIOD, GPIO_PIN_NO_15);
-	delay(100000000);
+	delay(50000000);
 	GPIO_WriteToOutputPin(GPIOD, GPIO_PIN_NO_15, DISABLE);
 	GPIO_ToggleOutputPin(GPIOD, GPIO_PIN_NO_12);
-	delay(100000000);
+	delay(50000000);
 	GPIO_WriteToOutputPin(GPIOD, GPIO_PIN_NO_12, DISABLE);
 	GPIO_ToggleOutputPin(GPIOD, GPIO_PIN_NO_13);
-	delay(100000000);
+	delay(50000000);
 	GPIO_WriteToOutputPin(GPIOD, GPIO_PIN_NO_13, DISABLE);
 	GPIO_ToggleOutputPin(GPIOD, GPIO_PIN_NO_12);
-	delay(100000000);
+	delay(50000000);
 	GPIO_WriteToOutputPin(GPIOD, GPIO_PIN_NO_12, DISABLE);
 	/*GPIO_ToggleOutputPin(GPIOD, GPIO_PIN_NO_15);
 	delay(7500000);
@@ -175,16 +175,16 @@ int medium(){
 
 int fast(){
 	GPIO_ToggleOutputPin(GPIOD, GPIO_PIN_NO_15);
-	delay(50000000);
+	delay(25000000);
 	GPIO_WriteToOutputPin(GPIOD, GPIO_PIN_NO_15, DISABLE);
 	GPIO_ToggleOutputPin(GPIOD, GPIO_PIN_NO_12);
-	delay(50000000);
+	delay(25000000);
 	GPIO_WriteToOutputPin(GPIOD, GPIO_PIN_NO_12, DISABLE);
 	GPIO_ToggleOutputPin(GPIOD, GPIO_PIN_NO_13);
-	delay(50000000);
+	delay(25000000);
 	GPIO_WriteToOutputPin(GPIOD, GPIO_PIN_NO_13, DISABLE);
 	GPIO_ToggleOutputPin(GPIOD, GPIO_PIN_NO_12);
-	delay(50000000);
+	delay(25000000);
 	GPIO_WriteToOutputPin(GPIOD, GPIO_PIN_NO_12, DISABLE);
 	/*GPIO_ToggleOutputPin(GPIOD, GPIO_PIN_NO_15);
 	delay(100000);
