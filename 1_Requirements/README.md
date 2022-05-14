@@ -43,7 +43,7 @@
 |  ID   | Description | Status (Implemented/In Future) |
 | ----- | ----------- | ------------------------------ |
 | HLR 1 |    Speed Control   |  Implemented  |
-| HLR 2 |    Car ignition/ON   | Implemented |
+| HLR 2 |    Car ignition ON   | Implemented |
 | HLR 3 |    Car Power OFF  | Implemented |
 | HLR 4 |    Switch based speed control  | Implemented |
 | HLR 5 |    Controlling wiper speed using sensor   | In Future |
