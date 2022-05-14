@@ -37,15 +37,15 @@ Idx Name          Size      VMA       LMA       File off  Algn
                   CONTENTS, READONLY, DEBUGGING, OCTETS
  16 .debug_ranges 000000b8  00000000  00000000  00011a70  2**3
                   CONTENTS, READONLY, DEBUGGING, OCTETS
- 17 .debug_macro  0000189b  00000000  00000000  00011b28  2**0
+ 17 .debug_macro  000018ad  00000000  00000000  00011b28  2**0
                   CONTENTS, READONLY, DEBUGGING, OCTETS
- 18 .debug_line   00000eb1  00000000  00000000  000133c3  2**0
+ 18 .debug_line   00000eb1  00000000  00000000  000133d5  2**0
                   CONTENTS, READONLY, DEBUGGING, OCTETS
- 19 .debug_str    00005eee  00000000  00000000  00014274  2**0
+ 19 .debug_str    00005f18  00000000  00000000  00014286  2**0
                   CONTENTS, READONLY, DEBUGGING, OCTETS
- 20 .comment      00000050  00000000  00000000  0001a162  2**0
+ 20 .comment      00000050  00000000  00000000  0001a19e  2**0
                   CONTENTS, READONLY
- 21 .debug_frame  000002bc  00000000  00000000  0001a1b4  2**2
+ 21 .debug_frame  000002bc  00000000  00000000  0001a1f0  2**2
                   CONTENTS, READONLY, DEBUGGING, OCTETS
 
 Disassembly of section .text:
@@ -1128,7 +1128,7 @@ int slow()
  800087c:	210f      	movs	r1, #15
  800087e:	481d      	ldr	r0, [pc, #116]	; (80008f4 <slow+0x7c>)
  8000880:	f7ff ff0f 	bl	80006a2 <GPIO_ToggleOutputPin>
-	delay(80000000);
+	delay(HZ_1);
  8000884:	481c      	ldr	r0, [pc, #112]	; (80008f8 <slow+0x80>)
  8000886:	f7ff ffe1 	bl	800084c <delay>
 	GPIO_WriteToOutputPin(GPIOD, GPIO_PIN_NO_15, DISABLE);
@@ -1140,7 +1140,7 @@ int slow()
  8000894:	210c      	movs	r1, #12
  8000896:	4817      	ldr	r0, [pc, #92]	; (80008f4 <slow+0x7c>)
  8000898:	f7ff ff03 	bl	80006a2 <GPIO_ToggleOutputPin>
-	delay(80000000);
+	delay(HZ_1);
  800089c:	4816      	ldr	r0, [pc, #88]	; (80008f8 <slow+0x80>)
  800089e:	f7ff ffd5 	bl	800084c <delay>
 	GPIO_WriteToOutputPin(GPIOD, GPIO_PIN_NO_12, DISABLE);
@@ -1152,7 +1152,7 @@ int slow()
  80008ac:	210d      	movs	r1, #13
  80008ae:	4811      	ldr	r0, [pc, #68]	; (80008f4 <slow+0x7c>)
  80008b0:	f7ff fef7 	bl	80006a2 <GPIO_ToggleOutputPin>
-	delay(80000000);
+	delay(HZ_1);
  80008b4:	4810      	ldr	r0, [pc, #64]	; (80008f8 <slow+0x80>)
  80008b6:	f7ff ffc9 	bl	800084c <delay>
 	GPIO_WriteToOutputPin(GPIOD, GPIO_PIN_NO_13, DISABLE);
@@ -1164,7 +1164,7 @@ int slow()
  80008c4:	210c      	movs	r1, #12
  80008c6:	480b      	ldr	r0, [pc, #44]	; (80008f4 <slow+0x7c>)
  80008c8:	f7ff feeb 	bl	80006a2 <GPIO_ToggleOutputPin>
-	delay(80000000);
+	delay(HZ_1);
  80008cc:	480a      	ldr	r0, [pc, #40]	; (80008f8 <slow+0x80>)
  80008ce:	f7ff ffbd 	bl	800084c <delay>
 	GPIO_WriteToOutputPin(GPIOD, GPIO_PIN_NO_12, DISABLE);
@@ -1204,7 +1204,7 @@ int medium(){
  8000904:	210f      	movs	r1, #15
  8000906:	481d      	ldr	r0, [pc, #116]	; (800097c <medium+0x7c>)
  8000908:	f7ff fecb 	bl	80006a2 <GPIO_ToggleOutputPin>
-	delay(50000000);
+	delay(HZ_4);
  800090c:	481c      	ldr	r0, [pc, #112]	; (8000980 <medium+0x80>)
  800090e:	f7ff ff9d 	bl	800084c <delay>
 	GPIO_WriteToOutputPin(GPIOD, GPIO_PIN_NO_15, DISABLE);
@@ -1216,7 +1216,7 @@ int medium(){
  800091c:	210c      	movs	r1, #12
  800091e:	4817      	ldr	r0, [pc, #92]	; (800097c <medium+0x7c>)
  8000920:	f7ff febf 	bl	80006a2 <GPIO_ToggleOutputPin>
-	delay(50000000);
+	delay(HZ_4);
  8000924:	4816      	ldr	r0, [pc, #88]	; (8000980 <medium+0x80>)
  8000926:	f7ff ff91 	bl	800084c <delay>
 	GPIO_WriteToOutputPin(GPIOD, GPIO_PIN_NO_12, DISABLE);
@@ -1228,7 +1228,7 @@ int medium(){
  8000934:	210d      	movs	r1, #13
  8000936:	4811      	ldr	r0, [pc, #68]	; (800097c <medium+0x7c>)
  8000938:	f7ff feb3 	bl	80006a2 <GPIO_ToggleOutputPin>
-	delay(50000000);
+	delay(HZ_4);
  800093c:	4810      	ldr	r0, [pc, #64]	; (8000980 <medium+0x80>)
  800093e:	f7ff ff85 	bl	800084c <delay>
 	GPIO_WriteToOutputPin(GPIOD, GPIO_PIN_NO_13, DISABLE);
@@ -1240,7 +1240,7 @@ int medium(){
  800094c:	210c      	movs	r1, #12
  800094e:	480b      	ldr	r0, [pc, #44]	; (800097c <medium+0x7c>)
  8000950:	f7ff fea7 	bl	80006a2 <GPIO_ToggleOutputPin>
-	delay(50000000);
+	delay(HZ_4);
  8000954:	480a      	ldr	r0, [pc, #40]	; (8000980 <medium+0x80>)
  8000956:	f7ff ff79 	bl	800084c <delay>
 	GPIO_WriteToOutputPin(GPIOD, GPIO_PIN_NO_12, DISABLE);
@@ -1281,7 +1281,7 @@ int fast(){
  800098c:	210f      	movs	r1, #15
  800098e:	481d      	ldr	r0, [pc, #116]	; (8000a04 <fast+0x7c>)
  8000990:	f7ff fe87 	bl	80006a2 <GPIO_ToggleOutputPin>
-	delay(25000000);
+	delay(HZ_8);
  8000994:	481c      	ldr	r0, [pc, #112]	; (8000a08 <fast+0x80>)
  8000996:	f7ff ff59 	bl	800084c <delay>
 	GPIO_WriteToOutputPin(GPIOD, GPIO_PIN_NO_15, DISABLE);
@@ -1293,7 +1293,7 @@ int fast(){
  80009a4:	210c      	movs	r1, #12
  80009a6:	4817      	ldr	r0, [pc, #92]	; (8000a04 <fast+0x7c>)
  80009a8:	f7ff fe7b 	bl	80006a2 <GPIO_ToggleOutputPin>
-	delay(25000000);
+	delay(HZ_8);
  80009ac:	4816      	ldr	r0, [pc, #88]	; (8000a08 <fast+0x80>)
  80009ae:	f7ff ff4d 	bl	800084c <delay>
 	GPIO_WriteToOutputPin(GPIOD, GPIO_PIN_NO_12, DISABLE);
@@ -1305,7 +1305,7 @@ int fast(){
  80009bc:	210d      	movs	r1, #13
  80009be:	4811      	ldr	r0, [pc, #68]	; (8000a04 <fast+0x7c>)
  80009c0:	f7ff fe6f 	bl	80006a2 <GPIO_ToggleOutputPin>
-	delay(25000000);
+	delay(HZ_8);
  80009c4:	4810      	ldr	r0, [pc, #64]	; (8000a08 <fast+0x80>)
  80009c6:	f7ff ff41 	bl	800084c <delay>
 	GPIO_WriteToOutputPin(GPIOD, GPIO_PIN_NO_13, DISABLE);
@@ -1317,7 +1317,7 @@ int fast(){
  80009d4:	210c      	movs	r1, #12
  80009d6:	480b      	ldr	r0, [pc, #44]	; (8000a04 <fast+0x7c>)
  80009d8:	f7ff fe63 	bl	80006a2 <GPIO_ToggleOutputPin>
-	delay(25000000);
+	delay(HZ_8);
  80009dc:	480a      	ldr	r0, [pc, #40]	; (8000a08 <fast+0x80>)
  80009de:	f7ff ff35 	bl	800084c <delay>
 	GPIO_WriteToOutputPin(GPIOD, GPIO_PIN_NO_12, DISABLE);

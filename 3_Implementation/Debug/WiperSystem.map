@@ -668,7 +668,7 @@ LOAD c:/st/stm32cubeide_1.9.0/stm32cubeide/plugins/com.st.stm32cube.ide.mcu.exte
  .debug_ranges  0x0000000000000060       0x38 ./Src/main.o
  .debug_ranges  0x0000000000000098       0x20 ./Startup/startup_stm32f407vgtx.o
 
-.debug_macro    0x0000000000000000     0x189b
+.debug_macro    0x0000000000000000     0x18ad
  .debug_macro   0x0000000000000000       0x8f ./Src/MyStm32f407xx_gpio_driver.o
  .debug_macro   0x000000000000008f      0xa84 ./Src/MyStm32f407xx_gpio_driver.o
  .debug_macro   0x0000000000000b13      0x174 ./Src/MyStm32f407xx_gpio_driver.o
@@ -680,19 +680,19 @@ LOAD c:/st/stm32cubeide_1.9.0/stm32cubeide/plugins/com.st.stm32cube.ide.mcu.exte
  .debug_macro   0x0000000000000ef5      0x1df ./Src/MyStm32f407xx_gpio_driver.o
  .debug_macro   0x00000000000010d4      0x674 ./Src/MyStm32f407xx_gpio_driver.o
  .debug_macro   0x0000000000001748       0xc4 ./Src/MyStm32f407xx_gpio_driver.o
- .debug_macro   0x000000000000180c       0x8f ./Src/main.o
+ .debug_macro   0x000000000000180c       0xa1 ./Src/main.o
 
 .debug_line     0x0000000000000000      0xeb1
  .debug_line    0x0000000000000000      0x8db ./Src/MyStm32f407xx_gpio_driver.o
  .debug_line    0x00000000000008db      0x552 ./Src/main.o
  .debug_line    0x0000000000000e2d       0x84 ./Startup/startup_stm32f407vgtx.o
 
-.debug_str      0x0000000000000000     0x5eee
+.debug_str      0x0000000000000000     0x5f18
  .debug_str     0x0000000000000000     0x5e8d ./Src/MyStm32f407xx_gpio_driver.o
                                        0x6080 (size before relaxing)
- .debug_str     0x0000000000005e8d       0x30 ./Src/main.o
-                                       0x5e37 (size before relaxing)
- .debug_str     0x0000000000005ebd       0x31 ./Startup/startup_stm32f407vgtx.o
+ .debug_str     0x0000000000005e8d       0x5a ./Src/main.o
+                                       0x5e61 (size before relaxing)
+ .debug_str     0x0000000000005ee7       0x31 ./Startup/startup_stm32f407vgtx.o
                                          0x74 (size before relaxing)
 
 .comment        0x0000000000000000       0x50

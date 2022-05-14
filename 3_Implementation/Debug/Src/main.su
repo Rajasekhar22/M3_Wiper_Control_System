@@ -1,6 +1,6 @@
-../Src/main.c:28:5:main	40	static
-../Src/main.c:125:6:delay	24	static
-../Src/main.c:130:5:slow	8	static
-../Src/main.c:153:5:medium	8	static
-../Src/main.c:176:5:fast	8	static
-../Src/main.c:199:6:off	8	static
+../Src/main.c:31:5:main	40	static
+../Src/main.c:128:6:delay	24	static
+../Src/main.c:133:5:slow	8	static
+../Src/main.c:156:5:medium	8	static
+../Src/main.c:179:5:fast	8	static
+../Src/main.c:202:6:off	8	static

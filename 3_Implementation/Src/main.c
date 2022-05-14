@@ -17,6 +17,9 @@
  */
 
 #include "MyStm32f407xx.h"
+#define HZ_1 		80000000
+#define	HZ_4		50000000
+#define	HZ_8		25000000
 int slow();
 int fast();
 int medium();
@@ -130,16 +133,16 @@ void delay(int par)
 int slow()
 {
 	GPIO_ToggleOutputPin(GPIOD, GPIO_PIN_NO_15);
-	delay(80000000);
+	delay(HZ_1);
 	GPIO_WriteToOutputPin(GPIOD, GPIO_PIN_NO_15, DISABLE);
 	GPIO_ToggleOutputPin(GPIOD, GPIO_PIN_NO_12);
-	delay(80000000);
+	delay(HZ_1);
 	GPIO_WriteToOutputPin(GPIOD, GPIO_PIN_NO_12, DISABLE);
 	GPIO_ToggleOutputPin(GPIOD, GPIO_PIN_NO_13);
-	delay(80000000);
+	delay(HZ_1);
 	GPIO_WriteToOutputPin(GPIOD, GPIO_PIN_NO_13, DISABLE);
 	GPIO_ToggleOutputPin(GPIOD, GPIO_PIN_NO_12);
-	delay(80000000);
+	delay(HZ_1);
 	GPIO_WriteToOutputPin(GPIOD, GPIO_PIN_NO_12, DISABLE);
 	/*GPIO_ToggleOutputPin(GPIOD, GPIO_PIN_NO_15);
 	delay(50000000);
@@ -152,16 +155,16 @@ int slow()
 }
 int medium(){
 	GPIO_ToggleOutputPin(GPIOD, GPIO_PIN_NO_15);
-	delay(50000000);
+	delay(HZ_4);
 	GPIO_WriteToOutputPin(GPIOD, GPIO_PIN_NO_15, DISABLE);
 	GPIO_ToggleOutputPin(GPIOD, GPIO_PIN_NO_12);
-	delay(50000000);
+	delay(HZ_4);
 	GPIO_WriteToOutputPin(GPIOD, GPIO_PIN_NO_12, DISABLE);
 	GPIO_ToggleOutputPin(GPIOD, GPIO_PIN_NO_13);
-	delay(50000000);
+	delay(HZ_4);
 	GPIO_WriteToOutputPin(GPIOD, GPIO_PIN_NO_13, DISABLE);
 	GPIO_ToggleOutputPin(GPIOD, GPIO_PIN_NO_12);
-	delay(50000000);
+	delay(HZ_4);
 	GPIO_WriteToOutputPin(GPIOD, GPIO_PIN_NO_12, DISABLE);
 	/*GPIO_ToggleOutputPin(GPIOD, GPIO_PIN_NO_15);
 	delay(7500000);
@@ -175,16 +178,16 @@ int medium(){
 
 int fast(){
 	GPIO_ToggleOutputPin(GPIOD, GPIO_PIN_NO_15);
-	delay(25000000);
+	delay(HZ_8);
 	GPIO_WriteToOutputPin(GPIOD, GPIO_PIN_NO_15, DISABLE);
 	GPIO_ToggleOutputPin(GPIOD, GPIO_PIN_NO_12);
-	delay(25000000);
+	delay(HZ_8);
 	GPIO_WriteToOutputPin(GPIOD, GPIO_PIN_NO_12, DISABLE);
 	GPIO_ToggleOutputPin(GPIOD, GPIO_PIN_NO_13);
-	delay(25000000);
+	delay(HZ_8);
 	GPIO_WriteToOutputPin(GPIOD, GPIO_PIN_NO_13, DISABLE);
 	GPIO_ToggleOutputPin(GPIOD, GPIO_PIN_NO_12);
-	delay(25000000);
+	delay(HZ_8);
 	GPIO_WriteToOutputPin(GPIOD, GPIO_PIN_NO_12, DISABLE);
 	/*GPIO_ToggleOutputPin(GPIOD, GPIO_PIN_NO_15);
 	delay(100000);
