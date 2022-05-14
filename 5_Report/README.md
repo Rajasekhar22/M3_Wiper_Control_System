@@ -12,6 +12,37 @@
 
 ##  INTRODUCTION
 
+```bash
+  "In this project windshield wiper is implemented with 3 type of speeds using delay using STM32f407VGTx - DISCOVERY BOARD. LED's 
+  inbuilt in board are used demonstrate the speeds and movement of the wiper over the windshield. Different operations of the 
+  Provides respective speed and the movement of wiper. LED's are considered as the wiper's because, There is no wiper to interface 
+  with STM32 board used."
+
+```
+
+### Pull-Up Mode
+
+![Schematic-Pullup-resistor-STM32F4](https://user-images.githubusercontent.com/101009958/168415764-c33b820c-13a1-4ecf-8756-5d6f57431d85.jpg)
+
+In Pull-up mode, when a push button is not pressed, a logic high input appears on the STM32F4 GPIO pin. Because a 5V signal appears on the input terminal through an R1 resistor. On the contrary, when the push button is pressed, metallic contacts of the push button make contact with the ground terminal and the input terminal. Therefore, a logic low input reflects on the digital input pin of the STM32F4 Discovery board. In short, by reading this state of the push button with a digital input pin of a microcontroller, we can identify whether a push button is pressed or not. The following schematic diagram shows the connection of a push button with a pull-up resistor. 
+
+### Pull-Down Mode
+
+![Pull-down-resistor-with-Push-button-Schematic](https://user-images.githubusercontent.com/101009958/168415787-21339e48-9b87-485f-9ed8-184167b003db.jpg)
+
+In Pull-down mode, when a push button is not pressed, a logic low input appears on STM32F4 GPIO pin. Because a ground reference signal appears on the input terminal through a R1 resistor. On the contrary, when the push button is pressed, metallic contacts of the push button make contact with the +5V signal and the input terminal. Therefore, a logic high input reflects on the digital input pin of STM32F4 Discovery board. The following schematic diagram shows the connection of a push button with a pull-up resistor.
+
+### OnBoard Push Button STM32F4 Discovery Board
+
+![OnBoard-Push-Button-STM32F4-Discovery-Board](https://user-images.githubusercontent.com/101009958/168415840-b005f3ec-85b2-4ec9-9fca-9664a63be94e.jpg)
+
+The discovery board comes with one user button connected with pin zero of PORTA GPIO. We will use this push button as a digital input to control onboard LEDs on the discovery board. 
+
+As you can see in the following schematic diagram, the onboard user push button is connected with PA0 digital pin through a pull-down resistor. This means when the push button is not pressed, we will get an active low signal at the PA0 pin. Similarly, when it is pressed, we will get an active high signal on the PA0 pin. 
+
+##  BEHAVIOURAL DIAGRAM
+
+<img width="800" alt="2022-05-14-01-25-04" src="https://user-images.githubusercontent.com/101009958/168410659-c55cf5de-7039-45f1-8efe-879a05a07bd6.png">
 
 ##  INSTRUMENTS REQUIRED
 
