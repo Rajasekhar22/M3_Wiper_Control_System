@@ -13,6 +13,8 @@
 *   [Wiper System for Automated vehicle](https://sci-hub.se/10.1109/sice.2006.314662)
 *   [Rain sensor for automatic Vehicle](https://ieeexplore.ieee.org/abstract/document/6727613/)
 *   [Implementation of Vehicle Wiper Control System Using Image Sensor](https://www.koreascience.or.kr/article/JAKO201423366169200.page)
+*   [Automatic wiper system](https://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.1069.1105&rep=rep1&type=pdf)
+*   [Design and Integration of Lane Departure Warning, Adaptive Headlight and Wiper system for Automobile Safety](https://ieeexplore.ieee.org/abstract/document/9016731/)
 
 
 ##  Key feautures
