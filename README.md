@@ -12,6 +12,15 @@
 | 5_Report | README.md |
 | 6_Output | README.md |
 
+##  Installation Softwares
+* STM32CUBEIDE
+* CYGWIN
+* GNU TOOLCHAIN
+* X pack tools
+  * WINDOWS BUILD TOOLS
+  * OPEN OCD
+  * QEMU
+* GitHub desktop
 
 ##  Actions
 
@@ -26,3 +35,8 @@
 # [![codiga](https://img.shields.io/badge/CODIGA_GRADE-A-green.svg)](https://api.codiga.io/project/33400/status/svg)
 
 # [![codiga](https://img.shields.io/badge/CODIGA_QUALITY_SCORE-97-green.svg)](https://api.codiga.io/project/33400/score/svg)
+
+
+##  CONTACT
+
+* For support, email rajasekharganesh2202@gmail.com / Raise an issue through GITHUB.
