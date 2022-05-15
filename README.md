@@ -36,6 +36,9 @@
 
 # [![codiga](https://img.shields.io/badge/CODIGA_QUALITY_SCORE-97-green.svg)](https://api.codiga.io/project/33400/score/svg)
 
+## CODACY
+
+# [![Codacy Badge](https://app.codacy.com/project/badge/Grade/4d9035db5b984105ba7c12fbb4cef65c)](https://www.codacy.com/gh/Rajasekhar22/M3_Wiper_Control_System/dashboard?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=Rajasekhar22/M3_Wiper_Control_System&amp;utm_campaign=Badge_Grade)
 
 ##  CONTACT
 
