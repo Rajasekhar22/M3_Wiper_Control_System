@@ -1,5 +1,9 @@
 # OUTPUT 
 
+##  BUILDING AND RUNNING
+
+https://user-images.githubusercontent.com/101009958/168486968-05f46df4-6f5f-4976-b3a3-5a029fd84283.mp4
+
 ##  CAR ON
 
 https://user-images.githubusercontent.com/101009958/168425717-cf2fcc28-0ac4-4da6-a708-5ed2317f9dab.mp4
@@ -24,13 +28,7 @@ https://user-images.githubusercontent.com/101009958/168425692-fa9f3393-09a9-4f91
 
 https://user-images.githubusercontent.com/101009958/168425757-e78cffbb-7ec0-4871-b585-38d9208fbdf5.mp4
 
-##  WHOLE PROCESS
 
-https://user-images.githubusercontent.com/101009958/168425702-60d53219-1147-49f9-a818-e44c2e33c586.mp4
-
-##  Two time running
-
-https://user-images.githubusercontent.com/101009958/168443921-fb2d6d81-d10b-42a9-8027-bf0011b15837.mp4
 
 
 
